@@ -1,7 +1,7 @@
 const currency = Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 });
 const number = Intl.NumberFormat('id-ID', { minimumFractionDigits: 0 });
 
-export const toIDR = (v, symbol = true) => {
+const toIDR = (v, symbol = true) => {
   let modV = v;
 
   if (!isNaN(v)) {
@@ -16,4 +16,4 @@ export const toIDR = (v, symbol = true) => {
   return modV
 }
 
-export default currency;
+module.exports = { toIDR, currency };
