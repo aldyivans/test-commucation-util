@@ -16,4 +16,4 @@ export const toIDR = (v, symbol = true) => {
   return modV
 }
 
-module.exports = { toIDR }
+export default currency;
