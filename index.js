@@ -1,1 +1,1 @@
-import { toIDR } from "./currency/currency";
+const { toIDR } = require('./currency/currency')
